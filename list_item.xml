@@ -3,18 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="88dp"
+    android:orientation="horizontal"
+    tools:background="#FD8E09">
+
+    <ImageView
+        android:id="@+id/image"
+        tools:src="@drawable/number_eight"
+        style="@style/ImageStyle"
+        android:background="#FFF7DA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
 
     <TextView
         android:id="@+id/list_item1"
-        style="@style/NumbersStyle"
-        tools:text="lutti" />
+        style="@style/WordsStyle"
+        tools:text="lutti"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/list_item2"
-        style="@style/NumbersStyle"
+        style="@style/WordsStyle"
         tools:text="one" />
+
+    </LinearLayout>
 
 </LinearLayout>
