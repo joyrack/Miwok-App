@@ -2,17 +2,19 @@ package com.example.miwok;
 
 public class Word {
     private final String engWord, miwokWord;
-    private final int imageResourceId;
+    private final int imageResourceId, audioResourceId;
 
-    public Word(String eng, String miwok) {
+    public Word(String eng, String miwok, int audioId) {
         engWord = eng;
         miwokWord = miwok;
         imageResourceId = -1;
+        audioResourceId = audioId;
     }
-    public Word(String eng, String miwok, int imageId){
+    public Word(String eng, String miwok, int imageId, int audioId){
         engWord = eng;
         miwokWord = miwok;
         imageResourceId = imageId;
+        audioResourceId = audioId;
     }
     public String getEngWord() {
         return engWord;
@@ -23,4 +25,8 @@ public class Word {
     public int getImageResourceId(){
         return imageResourceId;
     }
+    public int getAudioResourceId(){
+        return audioResourceId;
+    }
 }
+
